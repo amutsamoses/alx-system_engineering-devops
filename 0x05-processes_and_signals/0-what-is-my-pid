@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#write a bash script that display its own ID
+
+echo $$
