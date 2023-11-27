@@ -2,10 +2,10 @@
 
 #script that displays Best School 10 times.
 
-j=0
+k=0
 
-until [ $j -eq 10 ]
+until [ $k -eq 10 ]
 do
     echo "Best School"
-    ((j++))
+    ((k++))
 done
