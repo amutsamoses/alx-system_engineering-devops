@@ -2,4 +2,10 @@
 # displays listining active ports
 # + as the PID and name of the program to which each socket belongs.
 
-netstat -l --program
+# Get the list of listening ports
+listening_ports=$(netstat -lnp | grep LISTEN | awk '{print $4}')
+
+# Display the list of listening ports
+for port in $listening_ports; do
+  echo "Listening on port: $port"
+done
